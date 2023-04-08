@@ -1,0 +1,10 @@
+enabled: true
+respawnHealth: 10
+respawnFoodLevel: 3
+exceptedWorlds:
+respawnMessages:
+  - §7§lあなたは生き返った。体が重く、おなかが減っている・・・。
+respawnCommands:
+  - effect give <player> minecraft:slowness 30 0 true
+  - effect give <player> minecraft:mining_fatigue 60 0 true
+  - effect give <player> minecraft:weakness 60 0 true

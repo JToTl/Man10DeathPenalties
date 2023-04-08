@@ -1,0 +1,11 @@
+name: Man10DeathPenalties
+version: '${version}'
+main: ltotj.minecraft.man10deathpenalties.Man10DeathPenalties
+api-version: 1.19
+commands:
+  mdeathpenalties:
+    usage: "ｺﾝﾆﾁﾊ!"
+
+permissions:
+  mdeathpenalties.op:
+    default: op
