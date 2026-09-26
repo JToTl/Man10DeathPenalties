@@ -102,6 +102,7 @@ class Man10DeathPenalties : JavaPlugin(),Listener {
 
     @EventHandler
     fun respawn(e:PlayerRespawnEvent){
+        if(e.respawnFlags.contains(PlayerRespawnEvent.RespawnFlag.END_PORTAL))return
         if(!enable||exceptedWorlds.contains(e.player.world.name)||(e.player.hasPermission("mdeathpenalties.op")&&e.player.gameMode!=GameMode.CREATIVE&&e.player.gameMode!=GameMode.SPECTATOR))return
         val p=e.player
         for(str in respawnMessages){
